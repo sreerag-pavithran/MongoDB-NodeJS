@@ -1,0 +1,16 @@
+=> MongoDB - To check the MongoDB status
+
+=> Mongo - Start MongoDB
+
+=> use shodDB - Create/Switch to database
+
+=> db - To show the database
+
+=> db.collection.insertOne() - To insert one collection " db.products.inserOne({_id: 1, name: "Pencil", price: 10.00}) "
+
+=> db.collection.insertMany() -  To insert many collections.
+
+=> db.collection.find() - To find a collection. " db.products.find(option, option) "
+
+=> db.collection.updateOne() - To update a collection. " db.products.updateOne({_id:1}, {$set: {"stock": 31}}) "
+
