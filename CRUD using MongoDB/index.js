@@ -27,16 +27,16 @@ const personSchema = mongoose.Schema({
   age: Number,
 });
 
-fruit.save();
+// fruit.save();
 
-const Person = mongoose.model("Person", personSchema);
+const Mouse = mongoose.model("Mouse", personSchema);
 
-const person = new Person({
+const mouse = new Mouse({
   name: "Sreerag",
   age: 21,
 });
 
-person.save();
+mouse.save();
 
 // Adding many
 
@@ -52,13 +52,13 @@ const orange = new Fruit({
   review: "Some random review",
 });
 
-Fruit.insertMany([banana, orange], function (err) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("Successfully added");
-  }
-});
+// Fruit.insertMany([banana, orange], function (err) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("Successfully added");
+//   }
+// });
 
 // Finding and list out all item names
 Fruit.find(function (err, fruits) {
