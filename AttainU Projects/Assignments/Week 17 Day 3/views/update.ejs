@@ -16,39 +16,31 @@
     <br />
     <form>
       <div class="form-row">
-
         <div class="form-group col-md-6">
-            <label for="inputEmail4">Name</label>
-            <input type="text" class="form-control" id="inputEmail4" />
+          <label for="inputEmail4">Username</label>
+          <input type="text" class="form-control" id="inputEmail4" name="name"/>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Updated Name</label>
+            <input type="text" class="form-control" id="inputEmail4" name="upname"/>
           </div>
           <div class="form-group col-md-6">
-            <label for="inputPassword4">Username</label>
-            <input type="text" class="form-control" id="inputPassword4" />
+            <label for="inputPassword4">Updated Username</label>
+            <input type="text" class="form-control" id="inputPassword4" name="upusername"/>
           </div>
         </div>
-          
-        <div class="form-group col-md-6">
-          <label for="inputEmail4">Name</label>
-          <input type="text" class="form-control" id="inputEmail4" />
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputPassword4">Username</label>
-          <input type="text" class="form-control" id="inputPassword4" />
-        </div>
+
       </div>
       <div class="form-group">
-        <label for="inputAddress">E-mail</label>
-        <input type="text" class="form-control" id="inputAddress" />
+        <label for="inputAddress">Updated E-mail</label>
+        <input type="text" class="form-control" id="inputAddress" name="upemail"/>
       </div>
       <div class="form-group"></div>
       <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputCity">Group</label>
-          <input type="text" class="form-control" id="inputCity" />
-        </div>
+    
         <div class="form-group col-md-4">
-          <label for="inputState">Group</label>
-          <select id="inputState" class="form-control">
+          <label for="inputState">Updated Group</label>
+          <select id="inputState" class="form-control" name="upgroup">
             <option selected>Choose...</option>
             <option>01</option>
             <option>02</option>
@@ -59,7 +51,7 @@
         </div>
       </div>
       <div class="form-group"></div>
-      <button type="submit" class="btn btn-primary">Sign Up</button>
+      <button type="submit" class="btn btn-primary">Update User Info</button>
     </form>
   </body>
 </html>

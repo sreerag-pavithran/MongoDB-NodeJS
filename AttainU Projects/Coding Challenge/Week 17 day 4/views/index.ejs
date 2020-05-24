@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center;">Add Book Details</h1>
+    <br /><br />
+    <form action="/" method="POST">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Book Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputEmail4"
+            name="name"
+          />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Author</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPassword4"
+            name="author"
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">Published Year</label>
+          <input type="text" class="form-control" id="inputCity" name="year" />
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">Genre</label>
+          <select id="inputState" class="form-control" name="genre">
+            <option selected>Choose...</option>
+            <option>Romantic</option>
+            <option>Horror</option>
+            <option>Thriller</option>
+            <option>Dramatic</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Rating</label>
+          <select id="inputState" class="form-control" name="rating">
+            <option selected>Choose...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Book</button>
+      <br><br><br>
+    </form>
+    <hr>
+    <br /><br />
+    <form action="/books" method="GET">
+      <button type="submit" class="btn btn-warning">Filter books</button>
+    </form>
+    <br /><br />
+    <form action="/update" method="GET" style="float: left;">
+      <button type="submit" class="btn btn-secondary">Update book details</button>
+    </form>
+  </body>
+</html>

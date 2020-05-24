@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1><center>Create your account</center></h1>
+    <hr />
+    <br />
+    <form action="/" method="POST" autocomplete="off">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputEmail4"
+            name="name"
+          />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPassword4"
+            name="username"
+          />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword4"
+            name="password"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">E-mail</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          name="email"
+        />
+      </div>
+      <div class="form-group"></div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputState">Group</label>
+          <select id="inputState" class="form-control" name="group">
+            <option selected>Choose...</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"></div>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+  </body>
+</html>
