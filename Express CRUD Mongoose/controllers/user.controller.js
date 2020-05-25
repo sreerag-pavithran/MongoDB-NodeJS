@@ -57,7 +57,7 @@ const update = (req, res, next)=>{
         password: req.body.password, 
         group: req.body.group 
     };
-    User.findOneAndUpdate(userID, {$set: updatedUser})
+    User.findByIdAndUpdate(userID, {$set: updatedUser})
     .then(()=> {
         res.json({
             message: 'User details updated'
