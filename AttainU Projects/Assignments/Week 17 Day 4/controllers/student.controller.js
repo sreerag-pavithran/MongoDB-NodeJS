@@ -62,6 +62,40 @@ let show = (req, res, next)=>{
     })
 }
 
+let showAll = (req, res, next)=>{
+    Student.find()
+    .then((response)=>{
+        res.json({
+            response
+        })
+    })
+    .catch((err)=>{
+        res.json({
+            message: 'Error Occured'
+        })
+    })
+}
+
+let userAdd = (req, res, next)=>{
+    let newUser = new Student({
+        fname: req.body.fname,
+        lname: req.body.lname,
+        mobile: req.body.mobile,
+        address: req.body.address
+    })
+    newUser.save()
+    .then((response)=>{
+        res.json({
+            response
+        })
+    })
+    .catch((err)=>{
+        res.json({
+            message: 'Error occuerd'
+        })
+    })
+}
+
 module.exports = {
-    index, store, filter, show
+    index, store, filter, show, showAll, userAdd
 }
