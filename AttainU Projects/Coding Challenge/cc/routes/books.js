@@ -27,7 +27,7 @@ router.post('/', async (req, res) => {
     Rating: req.body.Rating
   })
   try {
-    const newSubscriber = await subscriber.save()
+    const newSubscriber = await subscriber.save() 
     res.status(201).json(newSubscriber)
   } catch (err) {
     res.status(400).json({ message: err.message })

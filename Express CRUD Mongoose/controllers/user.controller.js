@@ -44,6 +44,7 @@ const store = (req, res, next)=>{
         res.json({
             message: 'An error occured'
         })
+        console.log(err)
     })
 }
 

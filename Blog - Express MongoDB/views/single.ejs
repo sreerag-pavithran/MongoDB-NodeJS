@@ -9,15 +9,14 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="mb-4">Blog Articles</h1>
+    <h1 class="mb-4"><a href="/"> Blog Articles</a></h1>
     <a href="/articles/new" class="btn btn-success">New Article</a>
-    <% article.forEach(ele => {%>
       <div class="card mt-4">
         <div class="card-body">
-          <h4 class="card-title"><%= ele.title %></h4>
-          <div class="card-subtitle text-muted mb-2"><%= ele.createdAt %>
+          <h4 class="card-title"><%= article.title %></h4>
+          <div class="card-subtitle text-muted mb-2"><%= article.createdAt%>
           </div>
-          <div class="card-text mb-2"> <%= ele.description %></div>
+          <div class="card-text mb-2"> <%= article.description %></div>
           <a href="articles/" class="btn btn-primary">Read More</a>
           <a href="articles/edit/" class="btn btn-info">Edit</a>
           <form action="/articles/" method="POST" class="d-inline">
@@ -25,7 +24,6 @@
           </form>
         </div>
       </div>
-    <% }) %>
   </div>
 </body>
 </html>

@@ -6,7 +6,7 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost/testdb", { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect("mongodb+srv://cluster0-b6jtb.mongodb.net/testdb", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("NongoDB Connected"))
   .catch((err) => console.log("Error occured", err));
 
